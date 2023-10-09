@@ -1,5 +1,5 @@
 import './App.css';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 
 function formInput(props) {
     return (
@@ -20,20 +20,14 @@ function formInput(props) {
                 <label className='inputLabel'>Rating</label>
                 <input ref={props.refRating} className='inputField' id="ratingId" placeholder=''></input>
             </div>
-            <button onClick={() => props.addMovie()}> Add New Movie</button>
+            <button onClick={() => props.addMovie()}> ADD</button>
         </div>);
 }
 formInput.defaultProps = {
-    refTitle: "Xxxxxxxxx",
-    refDescription: "Xxxxxxxxxxxxx",
+    refTitle: 'Xxxxxxxxx',
+    refDescription: 'Xxxxxxxxxxxxx',
     refRating: 0.0,
     refPosterURL: 'https://upload.wikimedia.org/wikipedia/commons/c/c2/No_image_poster.png?20170513175923'
 }
 
-formInput.propTypes = {
-    refTitle: PropTypes.string,
-    refDescription: PropTypes.string,
-    refRating: PropTypes.number,
-    refPosterURL: PropTypes.string
-};
 export default formInput;

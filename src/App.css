@@ -17,7 +17,7 @@
 .divFilter {
   width: 600px;
   display: flex;
-  padding-left: 40px;
+  padding-left: 250px;
   align-items: center;
 }
 
@@ -26,6 +26,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.middleDiv {
+  display: flex;
+  justify-content: start;
+
+}
+
+.seenCounterOutput {
+  color: #2f67cc;
+  text-Align: center;
+  font-Family: fantasy;
+  font-Size: 40px;
+  font-Style: oblique;
+  padding-left: 50px;
+  padding-right: 20px;
+}
+
+.unSeenCounterOutput {
+  color: #010100;
+  text-Align: center;
+  font-Family: fantasy;
+  font-Size: 40px;
+  font-Style: oblique;
+  padding-left: 50px;
+  padding-right: 20px;
 }
 
 .input-wrapper {
@@ -59,9 +85,23 @@
 }
 
 .movieCard {
+
   margin: 10px;
   border: 2px solid black;
   border-radius: 5%;
   width: 190px;
   height: 380px;
+}
+
+.EyeIcon {
+  position: absolute;
+  left: 12em;
+  z-index: 2;
+  width: 80px;
+  height: 60px;
+}
+
+.AppEyeIcon {
+  width: 80px;
+  height: 60px;
 }

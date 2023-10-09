@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
+import blueLogo from './icons/checked-eye.png';
+import grayLogo from './icons/unchecked_eye.png';
 import ListGroup from 'react-bootstrap/ListGroup';
 import PropTypes from 'prop-types';
 import './App.css';
 
-const MovieCard = ({ movie }) => {
+const MovieCard = ({ movie, handleChecked }) => {
+    const [getChecked, setGetChecked] = useState(movie.checked);
+    handleChecked(movie.id, getChecked);
+
     return (
         <Card border="secondary" style={{ width: '18rem', margin: '10px' }}>
+            <Card.Img className='EyeIcon' variant="top" onClick={() => setGetChecked(movie.checked = !movie.checked)} src={movie.checked ? blueLogo : grayLogo} />
             <Card.Img variant="top" src={movie.posterURL} />
             <Card.Body>
                 <Card.Title style={{ fontFamily: "fantasy", fontSize: 20, fontStyle: "oblique" }}>{movie.title}</Card.Title>
