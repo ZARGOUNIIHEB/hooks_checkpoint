@@ -58,6 +58,19 @@
   position: relative;
 }
 
+.inputLabel {
+  font-Family: fantasy;
+}
+
+.inputField {
+  font-Family: fantasy;
+}
+
+.addButton {
+  font-Family: fantasy;
+  font-Size: 20px;
+}
+
 .input-wrapper input {
   border: 1px solid gray;
   border-radius: 6px;

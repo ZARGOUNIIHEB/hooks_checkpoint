@@ -20,7 +20,7 @@ function formInput(props) {
                 <label className='inputLabel'>Rating</label>
                 <input ref={props.refRating} className='inputField' id="ratingId" placeholder=''></input>
             </div>
-            <button onClick={() => props.addMovie()}> ADD</button>
+            <button className='addButton' onClick={() => props.addMovie()}> ADD </button>
         </div>);
 }
 formInput.defaultProps = {
